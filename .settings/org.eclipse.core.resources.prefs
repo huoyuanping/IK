@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+encoding//src/main/java/org/wltea/analyzer/lucene/IKAnalyzer.java=UTF-8
+encoding//src/main/java/org/wltea/analyzer/lucene/IKTokenizer.java=UTF-8

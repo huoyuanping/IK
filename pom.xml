@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.et</groupId>
+  <artifactId>IK</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+  	<!--IK分词器的配置 4.7 -->
+	<dependency>
+	    <groupId>com.janeluo</groupId>
+	    <artifactId>ikanalyzer</artifactId>
+	    <version>2012_u6</version>
+	    <!--  让lucene兼容5.5.4 要排除lucene的核心包 -->
+	     <exclusions>  
+     		 <exclusion>  
+                 <groupId>org.apache.lucene</groupId>  
+                  <artifactId>lucene-core</artifactId>  
+              </exclusion>
+              <exclusion>  
+                  <groupId>org.apache.lucene</groupId>  
+                   <artifactId>lucene-queries</artifactId>  
+              </exclusion>  
+               <exclusion>  
+                  <groupId>org.apache.lucene</groupId>  
+                   <artifactId>lucene-sandbox</artifactId>  
+              </exclusion>
+               <exclusion>  
+                  <groupId>org.apache.lucene</groupId>  
+                   <artifactId>lucene-queryparser</artifactId>  
+              </exclusion>
+              <exclusion>  
+                  <groupId>org.apache.lucene</groupId>  
+                   <artifactId>lucene-analyzers-common</artifactId>  
+              </exclusion>
+          </exclusions>  
+	</dependency>
+	<!-- 排除后引入新的jar包 -->
+	<dependency>
+		<groupId>org.apache.lucene</groupId>  
+        <artifactId>lucene-core</artifactId> 
+        <version>5.5.4</version> 
+	</dependency>
+	<dependency>
+		<groupId>org.apache.lucene</groupId>  
+        <artifactId>lucene-queries</artifactId> 
+        <version>5.5.4</version> 
+	</dependency>
+	<dependency>
+		<groupId>org.apache.lucene</groupId>  
+        <artifactId>lucene-sandbox</artifactId> 
+        <version>5.5.4</version> 
+	</dependency>
+	<dependency>
+		<groupId>org.apache.lucene</groupId>  
+        <artifactId>lucene-queryparser</artifactId> 
+        <version>5.5.4</version> 
+	</dependency>
+	<dependency>
+		<groupId>org.apache.lucene</groupId>  
+        <artifactId>lucene-analyzers-common</artifactId> 
+        <version>5.5.4</version> 
+	</dependency>
+	
+  </dependencies>
+</project>
